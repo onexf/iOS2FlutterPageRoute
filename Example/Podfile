@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'iOS2FlutterPageRoute_Example' do
+  pod 'iOS2FlutterPageRoute', :path => '../'
+
+  target 'iOS2FlutterPageRoute_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
