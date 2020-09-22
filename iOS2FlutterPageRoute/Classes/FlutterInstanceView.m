@@ -8,7 +8,6 @@
 
 #import "FlutterInstanceView.h"
 #import "UIViewController+Arguments.h"
-#import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
 
 @interface FlutterInstanceView () // <FlutterBinaryMessenger>
 
@@ -30,8 +29,6 @@
 - (void)viewDidLoad {
   
     [super viewDidLoad];
-
-    self.fd_prefersNavigationBarHidden = YES;
     
 //    self.fd_interactivePopDisabled = YES;
     
@@ -56,6 +53,15 @@
     }];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
 
 /// bug，页面不会销毁，可能由于使用了setInitialRoute设置进入Flutter的根页面
 - (void)dealloc {

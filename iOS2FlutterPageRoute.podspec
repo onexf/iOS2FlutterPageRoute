@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOS2FlutterPageRoute'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'iOS原生和Flutter页面之间跳转'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'FDFullscreenPopGesture'
   s.dependency 'Flutter'
   
 end
