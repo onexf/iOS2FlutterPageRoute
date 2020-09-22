@@ -7,6 +7,7 @@
 //
 
 #import "BTViewController.h"
+#import "iOS2FlutterPageRoute.h"
 
 @interface BTViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)pushFlutterView:(UIButton *)sender {
+    [PushInAFlutterView pushInFlutterWithRoute:@"/saleorder" eventChannelName:@"sold_list" arguments:@{
+        @"token": @"传递的数据呀"
+    }];
 }
 
 - (void)didReceiveMemoryWarning
