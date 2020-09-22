@@ -204,6 +204,11 @@
 				CLASSPREFIX = BT;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = onexf;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = ME56X78JH7;
+					};
+				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "iOS2FlutterPageRoute" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -421,7 +426,7 @@
 			baseConfigurationReference = CCFED793DDC73C5AB31DDAAA /* Pods-iOS2FlutterPageRoute_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ME56X78JH7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS2FlutterPageRoute/iOS2FlutterPageRoute-Prefix.pch";
 				INFOPLIST_FILE = "iOS2FlutterPageRoute/iOS2FlutterPageRoute-Info.plist";
@@ -438,7 +443,7 @@
 			baseConfigurationReference = 35E80F5FD04DA264CB8FC633 /* Pods-iOS2FlutterPageRoute_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ME56X78JH7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS2FlutterPageRoute/iOS2FlutterPageRoute-Prefix.pch";
 				INFOPLIST_FILE = "iOS2FlutterPageRoute/iOS2FlutterPageRoute-Info.plist";
